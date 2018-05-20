@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- <html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+  </body>
+</html> -->
+<html lang="en">
+   <!-- Head Section-->
+   <head>
+      <% include partials/page/head.ejs %>
+   </head>
+   
+  <body>
+    <!-- Header -->
+    <% include partials/page/header.ejs %>
+
+    <main role="main">
+    <div class="container-fluid carouselcearchcontainer">
+            <div class="row">
+      <div id="myCarousel" class="carousel slide col-xs-12 col-sm-12 col-lg-10 pr-0" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+          <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item Item1 active">
+                <div class="carousel-caption">
+                <div class="text-center white-text">
+                    <h1>Buy Your New Car Or Used Car. </h1>
+                    <h3>We have more than a thousand cars for you to choose. </h3>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+             </div>
+            </div>
+            
+          <div class="carousel-item Item2">
+                <div class="carousel-caption">
+                    <div class=" text-center white-text">
+                        <h1>Find Your Dream Car.</h1>
+                        <h3>We have more than a thousand cars for you to choose. </h3>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+          </div>
+          <div class="carousel-item Item3">
+                <div class="carousel-caption">
+                    <div class=" text-center white-text">
+                        <h1>Find Your Dream Car.</h1>
+                        <h3>We have more than a thousand cars for you to choose. </h3>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+        <section id="search-section" class="gray-bg col-xs-12 col-sm-12 col-lg-2">
+          <% include partials/page/quicksearch.ejs %>
+        </section>
+        
+      </div>
+    </div>
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container-fluid ">
+            <div class="heading">
+                <h3>RECENT CARS</h3>
+            </div>
+       </div>
+
+      <div class="container-fluid marketing">
+            
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+               
+                <div class=" col-xl-3 col-md-4 col-sm-6">
+                    <div class="card mb-4 box-shadow">
+                        <a  href="#"><img src="../Images/audi_q7_2017.jpg" class="card-img-top"  alt="Card image cap"></a>
+                        <div class="card-title">
+                            <h6><a href="#">Audi Q7</a></h6>
+                            <span class="price">$45,000</span> 
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li><i class="fa fa-road" aria-hidden="true"></i>0,000 km</li>
+                                <li><i class="fa fa-tachometer" aria-hidden="true"></i>30.000 miles</li>
+                                <li><i class="fa fa-calendar" aria-hidden="true"></i>2005 model</li>
+                                <li><i class="fa fa-car" aria-hidden="true"></i>Diesel</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i>5 seats</li>
+                                <li><i class="fa fa-superpowers" aria-hidden="true"></i>143 kW</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-xl-3 col-md-4 col-sm-6">
+                    <div class="card mb-4 box-shadow">
+                        <a  href="#"><img src="../Images/bmw_emw_m3_diski_serie.jpg" class="card-img-top"  alt="Card image cap"></a>
+                        <div class="card-title">
+                            <h6><a href="#">BWM M3</a></h6>
+                            <span class="price">$45,000</span> 
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li><i class="fa fa-road" aria-hidden="true"></i>0,000 km</li>
+                                <li><i class="fa fa-tachometer" aria-hidden="true"></i>30.000 miles</li>
+                                <li><i class="fa fa-calendar" aria-hidden="true"></i>2005 model</li>
+                                <li><i class="fa fa-car" aria-hidden="true"></i>Diesel</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i>5 seats</li>
+                                <li><i class="fa fa-superpowers" aria-hidden="true"></i>143 kW</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-xl-3 col-md-4 col-sm-6">
+                    <div class="card mb-4 box-shadow">
+                            <a  href="#"><img src="../Images/jaguar_f_type_r.jpg" class="card-img-top"  alt="Card image cap"></a>
+                        <div class="card-title">
+                            <h6><a href="#">Jaquar FR</a></h6>
+                            <span class="price">$45,000</span> 
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li><i class="fa fa-road" aria-hidden="true"></i>0,000 km</li>
+                                <li><i class="fa fa-tachometer" aria-hidden="true"></i>30.000 miles</li>
+                                <li><i class="fa fa-calendar" aria-hidden="true"></i>2005 model</li>
+                                <li><i class="fa fa-car" aria-hidden="true"></i>Diesel</li>
+                                <li><i class="fa fa-user" aria-hidden="true"></i>5 seats</li>
+                                <li><i class="fa fa-superpowers" aria-hidden="true"></i>143 kW</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3  col-md-4 col-sm-6">
+                    <div class="card mb-4 box-shadow">
+                        <div class="cardheader">
+                            <a  href="#"><img src="../Images/lamborghini_2016.jpg" class="card-img-top"  alt="Card image cap"></a>
+                            <ul class="card-ul">
+                                <li><i class="fa fa-road" aria-hidden="true"></i>20,000 km</li>
+                                <li><i class="fa fa-calendar" aria-hidden="true"></i>2005 Model</li>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Colorado, USA</li>
+                            </ul>
+                        </div>
+                        <div class="card-title">
+                            <h6><a href="#">Lamborghini 2016</a></h6>
+                            <span class="price">$45,000</span> 
+                        </div>
+                        <div class="card-body">
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-xl-3  col-md-4 col-sm-6">
+                    <div class="card mb-4 box-shadow">
+                        <div class="cardheader">
+                            <a  href="#"><img src="../Images/mclaren_650S.jpg" class="card-img-top"  alt="Card image cap"></a>
+                            <ul class="card-ul">
+                                <li><i class="fa fa-road" aria-hidden="true"></i>20,000 km</li>
+                                <li><i class="fa fa-calendar" aria-hidden="true"></i>2005 Model</li>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Colorado, USA</li>
+                            </ul>
+                        </div>
+                        <div class="card-title">
+                            <h6><a href="#">Mclaren 650S</a></h6>
+                            <span class="price">$45,000</span> 
+                        </div>
+                        <div class="card-body">
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-xl-3 col-md-4 col-sm-6">
+                    <div class="card mb-4 box-shadow">
+                      <div class="cardheader">
+                            <a  href="#"><img src="../Images/range_rover_2016.jpg" class="card-img-top"  alt="Card image cap"></a>
+                            <ul class="card-ul">
+                                <li><i class="fa fa-road" aria-hidden="true"></i>20,000 km</li>
+                                <li><i class="fa fa-calendar" aria-hidden="true"></i>2005 Model</li>
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i>Colorado, USA</li>
+                            </ul>
+                        </div>
+                        <div class="card-title">
+                            <h6><a href="#">Range Rover 2016</a></h6>
+                            <span class="price">$45,000</span> 
+                        </div>
+                        <div class="card-body">
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                      </div>
+                    </div>
+        
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+       <!-- <hr class="featurette-divider">
+         /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+       <!-- FOOTER -->
+       <% include partials/page/footer.ejs %>
+    </main>
+    <div id="back-top" class="back-top"> 
+        <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i> </a> 
+    </div>
+   <!-- Script Section-->
+   <% include partials/page/scriptdefaults.ejs %>
+   
+ <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg>
+</body>
+</html>

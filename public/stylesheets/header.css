@@ -1,0 +1,558 @@
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    font-weight: 600;
+}
+
+i{
+    width: 20px;
+}
+
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    margin: 0 auto 15px;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.btn-block,.btn-primary {
+    background-color: #c7081b;
+    border: none
+}
+
+h6 {
+    font-size: 18px;
+}
+.bg-site{
+    background: #222222 none repeat scroll 0 0;
+}
+
+.top-header ul li, .top-header ol li {
+    font-size: 12px;
+}
+.navbar a{
+    font-size: 20px;
+    font-weight: 500;
+}
+.navbar-dark{
+   /* background-color: black !important;*/
+   background-image: url(../Images/slide-show3.jpg);
+   background-position-y: 527px;
+   background-position-x: 71%;
+   object-fit: cover;
+   -o-object-fit: cover;
+   z-index: 1;
+   animation-direction: alternate;
+   /*animation-iteration-count: infinite;*/
+   animation-name: moving-car;
+    animation-duration: 10s;
+}
+
+
+@keyframes moving-car{
+    0%{
+        background-position-x: 80%;
+    }
+    50%{
+        background-position-x: 60%;
+    }
+    100%{
+        background-position-x: 80%;
+    }
+}
+
+
+@-webkit-keyframes moving-car{
+    0%{
+        background-position-x: 80%;
+    }
+    50%{
+        background-position-x: 60%;
+    }
+    100%{
+        background-position-x: 80%;
+    }
+}
+
+@-moz-keyframes moving-car{
+    0%{
+        background-position-x: 80%;
+    }
+    50%{
+        background-position-x: 60%;
+    }
+    100%{
+        background-position-x: 80%;
+    }
+}
+
+
+
+header.navbar-dark{position: relative;}
+header.navbar-dark::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0,0,0,.84);
+    z-index: -1;
+}
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #c7081b;
+}
+.header-brand{
+    height: 35px;
+    height: 50px;
+}
+
+.list-inline li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+.top-header .list-inline {
+    margin-bottom: 0px;
+}
+
+.list-inline li a {
+    text-decoration: none;
+    color: #FFF;
+}
+li a i{
+    width: 15px;
+}
+
+a{
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+body{
+    font-family: 'Lato', sans-serif;
+   background-color: #eeee;
+}
+
+
+.navbar-toggler {
+    float: right;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 2.25rem !important;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar-dark .navbar-brand {
+    color:  #c7081b;
+}
+.navbar a:hover {
+    text-decoration: none;
+    color:  rgb(250, 8, 8) !important;
+}
+
+.navbar a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Slider Items*/
+.Item1{
+    background: url("../Images/slide-show1.jpg");
+    background-size: auto auto;
+    background-size: cover;
+}
+.Item2{
+    background: url("../Images/slide-show2.jpg");
+    background-size: auto auto;
+    background-size: cover;
+}
+.Item3{
+    background: url("../Images/slide-show3.jpg");
+    background-size: auto auto;
+    background-size: cover;
+}
+.carousel{
+    position: relative;
+}
+
+#myCarousel .img-fluid {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+
+}
+
+#myCarousel .carousel-caption {
+    bottom: inherit;
+    left: 20%;
+    padding-bottom: 30px;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#myCarousel .carousel-item{
+    height: 546px;
+}
+
+#myCarousel h3 {
+    font-weight: 300;
+    margin: 0 auto 30px;
+}
+
+#myCarousel h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#myCarousel .carousel-item::after {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+ .carouselcearchcontainer{
+    padding-left: 0px;
+}
+
+.searchcontainer{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 20px;
+}
+/* search Section*/
+#search-section .form-group{
+    margin-bottom: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+#search-section h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+#search-section .btn{
+    color: #fff;
+}
+
+.select-input .form-control {
+    background: #fff;
+    border-radius: 3px;
+    color: rgb(33, 37, 41);
+    border: #e9ecef solid 1px;
+    font-size: 17px;
+}
+
+.form-control option {
+    padding: 10px;
+}
+
+#search-section {
+    padding-top: 20px;
+    padding-right: 0;
+    /* padding: 30px 20px 20px 10px; 
+    margin-bottom: 10px;*/
+    padding-left: 0;
+    padding-bottom: 1px;
+}
+.gray-bg {
+    background:rgba(34, 34, 34, 0.92);
+}
+#search-section select {
+    position: relative;
+}
+
+
+.form-control {
+    background: #eeeeee none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #888888;
+    font-size: 15px;
+    height: 46px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+/* -- body -- */
+
+.heading {
+     background-image: url(../Images/mercedes_benz_c_class.jpg);
+    background-position-y: 113px;
+    background-position-x: 55%;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.heading::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color:rgba(0,0,0,.84);
+    z-index: -1;
+}
+.heading h3 {
+    margin-bottom: 0px;
+    padding: 17px 20px 17px 35px;
+    position: relative;
+    height: 60px;
+    display: inline-block;
+    background: #c7081b;
+    color: #fff;
+}
+.heading h3::after {
+    position: absolute;
+    top: 0px;
+    right: -66px;
+    content: '';
+    border-width: 33px;
+    border-style: solid;
+    border-top-color: rgba(0,0,0,0);
+    border-right-color: rgba(0,0,0,0);
+    border-left-color: #c7081b;
+    border-bottom-color: #c7081b;
+    padding-left: 10px;
+}
+
+.card-ul {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: absolute;
+    width: 100%;
+}
+.cardheader{
+    position: relative;
+}
+
+.card-ul li {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 50px;
+    list-style: outside none none;
+    margin: 0 15px 0 auto;
+}
+
+.card-body .fa, .product-content .fa{
+    font-size: 1.15rem;
+    margin-right: 5px;
+    color: #22222257;
+}
+
+.card-title {
+    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+.card-title h6 {
+    float: left;
+    margin: 0 auto;
+    max-width: 245px;
+}
+
+.card-title .price {
+    color:  rgb(207, 29, 29) !important;
+    float: right;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.card-body {
+    padding: 0 20px 15px;
+}
+
+.card-body ul{
+    border-top: 1px solid #e7e6e6;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 20px 0 0;
+}
+
+.card-body ul li {
+
+    float: left;
+    font-size: 13px;
+    list-style: outside none none;
+    margin-bottom: 8px;
+    width: 50%;
+
+}
+
+.card-ul i{
+    width: 16px;
+}
+.card-title h6 a {
+    color: #111111;
+}
+
+.white-text{
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.marketing hr {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #c7081b;
+}
+
+/*-- Footer --*/
+.footer-top .heading-1 {
+    margin-top: 15px;
+    border-bottom: 2px solid #222;
+}
+
+.footer-top .heading-1 h3 {
+    border-bottom: 2px solid #c7081b;
+}
+
+.heading-1 {
+    padding: 0px 0px 10px 0px;
+    margin-bottom: 30px;
+}
+
+.heading-1 h3, .heading-1 h4 {
+    margin-bottom: -12px;
+    font-size: 22px;
+    padding-bottom: 13px;
+    display: inline-block;
+    color: white;
+}
+.footer-top .list-default li, .footer-top p {
+    color: #999;
+}
+
+.footer-top ul {
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+.footer-top{
+    background: #222222 none repeat scroll 0 0;
+}
+ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.list-default li {
+    padding: 5px 0px;
+    display: block;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    margin-bottom: 0px;
+}
+
+.list-default li a {
+    color: inherit;
+}
+
+.footer-bottom > .container > div{
+    padding: 20px;
+    padding-left: 0;
+}
+
+.footer-bottom{
+    background-color:  black;
+}
+
+.footer-bottom p{
+    color: #c7081b;
+}
+
+
+.back-top{
+    float: right;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    z-index: 1030;
+  }
+  .back-top a{ 
+    background-color: #c7081b;
+    border-radius: 50%;
+    color: #fff;   
+    padding: 19px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-bottom: 17px;
+    display: none;
+  }
+  .back-top show{
+      display: block;
+  }
+
+  .back-top a > i{
+    position: absolute;
+    top: 11px;
+    left: 14px;
+  }
+
+@media (max-width: 768px) {
+    #myCarousel .carousel-item {
+        height: 300px;
+     }
+     #myCarousel h3 {
+        font-weight: 300;
+         font-size: 1rem;
+    }
+
+    #myCarousel h1 {
+        font-size: 20px;
+        font-weight: 900;
+        
+    }
+
+    #search-section {
+        padding-top: 20px;
+        padding-right: 0;
+        /* padding: 30px 20px 20px 10px; */
+        /* margin-bottom: 10px; */
+        padding-left: 15px;
+    }
+   /* #myCarousel .carousel-item {
+       height: 300px;
+    }#myCarousel .carousel-item{
+        height: 32rem;
+    }*/
+}

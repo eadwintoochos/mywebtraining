@@ -1,0 +1,56 @@
+.section-header {
+    padding-bottom: 55px;
+}
+
+.section-header h2 {
+    margin-bottom: 30px;
+}
+
+.section-header p {
+    font-size: 17px;
+}
+
+.aboutcontent {
+    padding: 20px 0;
+}
+
+.aboutimg {
+    background: #000 none repeat scroll 0 0;
+    overflow: hidden;
+    border-radius: 20%;
+}
+
+.aboutimg img {
+    width: 100%;
+    border-radius: 20%;
+    transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+}
+
+.team_member {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.team_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team_img img {
+    width: 100%;
+}
+
+
+
+.team_info {
+    text-align: center;
+    padding: 20px;
+}
+
+.team_info h6, .team_info p {
+    margin: 0 0 4px;
+}
